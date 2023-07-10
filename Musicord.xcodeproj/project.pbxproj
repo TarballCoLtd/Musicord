@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03453D062A57DB0A003A0C28 /* SwordRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 03453D052A57DB0A003A0C28 /* SwordRPC */; };
 		0350E7462A577E0F006B1125 /* MusicordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350E7452A577E0F006B1125 /* MusicordApp.swift */; };
-		0350E7482A577E0F006B1125 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350E7472A577E0F006B1125 /* ContentView.swift */; };
 		0350E74A2A577E11006B1125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0350E7492A577E11006B1125 /* Assets.xcassets */; };
 		0350E74D2A577E11006B1125 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0350E74C2A577E11006B1125 /* Preview Assets.xcassets */; };
+		03653DFC2A5B6BEA00F9F632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03653DFB2A5B6BEA00F9F632 /* AppDelegate.swift */; };
+		03653E002A5B6BED00F9F632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03653DFF2A5B6BED00F9F632 /* Assets.xcassets */; };
+		03653E032A5B6BED00F9F632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03653E012A5B6BED00F9F632 /* Main.storyboard */; };
+		03653E092A5B72FE00F9F632 /* MusicordLoginHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03653DF92A5B6BEA00F9F632 /* MusicordLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03653E082A5B72DF00F9F632 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				03653E092A5B72FE00F9F632 /* MusicordLoginHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0350E7422A577E0F006B1125 /* Musicord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musicord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0350E7452A577E0F006B1125 /* MusicordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicordApp.swift; sourceTree = "<group>"; };
-		0350E7472A577E0F006B1125 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0350E7492A577E11006B1125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0350E74C2A577E11006B1125 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0350E74E2A577E11006B1125 /* Musicord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Musicord.entitlements; sourceTree = "<group>"; };
+		03653DF92A5B6BEA00F9F632 /* MusicordLoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicordLoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03653DFB2A5B6BEA00F9F632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03653DFF2A5B6BED00F9F632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03653E022A5B6BED00F9F632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03653E042A5B6BED00F9F632 /* MusicordLoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicordLoginHelper.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0350E73F2A577E0F006B1125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03453D062A57DB0A003A0C28 /* SwordRPC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03653DF62A5B6BEA00F9F632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0350E7442A577E0F006B1125 /* Musicord */,
+				03653DFA2A5B6BEA00F9F632 /* MusicordLoginHelper */,
 				0350E7432A577E0F006B1125 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0350E7422A577E0F006B1125 /* Musicord.app */,
+				03653DF92A5B6BEA00F9F632 /* MusicordLoginHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				0350E7452A577E0F006B1125 /* MusicordApp.swift */,
-				0350E7472A577E0F006B1125 /* ContentView.swift */,
 				0350E7492A577E11006B1125 /* Assets.xcassets */,
 				0350E74E2A577E11006B1125 /* Musicord.entitlements */,
 				0350E74B2A577E11006B1125 /* Preview Content */,
@@ -69,6 +99,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		03653DFA2A5B6BEA00F9F632 /* MusicordLoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				03653DFB2A5B6BEA00F9F632 /* AppDelegate.swift */,
+				03653DFF2A5B6BED00F9F632 /* Assets.xcassets */,
+				03653E012A5B6BED00F9F632 /* Main.storyboard */,
+				03653E042A5B6BED00F9F632 /* MusicordLoginHelper.entitlements */,
+			);
+			path = MusicordLoginHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,14 +120,35 @@
 				0350E73E2A577E0F006B1125 /* Sources */,
 				0350E73F2A577E0F006B1125 /* Frameworks */,
 				0350E7402A577E0F006B1125 /* Resources */,
+				03653E082A5B72DF00F9F632 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Musicord;
+			packageProductDependencies = (
+				03453D052A57DB0A003A0C28 /* SwordRPC */,
+			);
 			productName = Musicord;
 			productReference = 0350E7422A577E0F006B1125 /* Musicord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03653DF82A5B6BEA00F9F632 /* MusicordLoginHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03653E072A5B6BED00F9F632 /* Build configuration list for PBXNativeTarget "MusicordLoginHelper" */;
+			buildPhases = (
+				03653DF52A5B6BEA00F9F632 /* Sources */,
+				03653DF62A5B6BEA00F9F632 /* Frameworks */,
+				03653DF72A5B6BEA00F9F632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicordLoginHelper;
+			productName = MusicordLoginHelper;
+			productReference = 03653DF92A5B6BEA00F9F632 /* MusicordLoginHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +164,9 @@
 					0350E7412A577E0F006B1125 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					03653DF82A5B6BEA00F9F632 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = 0350E73D2A577E0F006B1125 /* Build configuration list for PBXProject "Musicord" */;
@@ -113,11 +178,15 @@
 				Base,
 			);
 			mainGroup = 0350E7392A577E0F006B1125;
+			packageReferences = (
+				03453D042A57DB0A003A0C28 /* XCRemoteSwiftPackageReference "SwordRPC" */,
+			);
 			productRefGroup = 0350E7432A577E0F006B1125 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0350E7412A577E0F006B1125 /* Musicord */,
+				03653DF82A5B6BEA00F9F632 /* MusicordLoginHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +201,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03653DF72A5B6BEA00F9F632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03653E002A5B6BED00F9F632 /* Assets.xcassets in Resources */,
+				03653E032A5B6BED00F9F632 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +217,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0350E7482A577E0F006B1125 /* ContentView.swift in Sources */,
 				0350E7462A577E0F006B1125 /* MusicordApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03653DF52A5B6BEA00F9F632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03653DFC2A5B6BEA00F9F632 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03653E012A5B6BED00F9F632 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03653E022A5B6BED00F9F632 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0350E74F2A577E11006B1125 /* Debug */ = {
@@ -271,21 +367,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Musicord/Musicord.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Musicord/Preview Content\"";
 				DEVELOPMENT_TEAM = W8C8UQ95CG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.Musicord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.MusicordApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,22 +396,82 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Musicord/Musicord.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Musicord/Preview Content\"";
 				DEVELOPMENT_TEAM = W8C8UQ95CG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.Musicord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.MusicordApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03653E052A5B6BED00F9F632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusicordLoginHelper/MusicordLoginHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8C8UQ95CG;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.MusicordHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03653E062A5B6BED00F9F632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MusicordLoginHelper/MusicordLoginHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8C8UQ95CG;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarball.MusicordHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -340,7 +498,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		03653E072A5B6BED00F9F632 /* Build configuration list for PBXNativeTarget "MusicordLoginHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03653E052A5B6BED00F9F632 /* Debug */,
+				03653E062A5B6BED00F9F632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03453D042A57DB0A003A0C28 /* XCRemoteSwiftPackageReference "SwordRPC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PKBeam/SwordRPC.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03453D052A57DB0A003A0C28 /* SwordRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03453D042A57DB0A003A0C28 /* XCRemoteSwiftPackageReference "SwordRPC" */;
+			productName = SwordRPC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0350E73A2A577E0F006B1125 /* Project object */;
 }
